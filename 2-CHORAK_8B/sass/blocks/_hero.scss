@@ -1,0 +1,169 @@
+.main-hero {
+  min-height: calc(100vh - 70px);
+  background-image: url("/images/heroBgImg.svg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__inner {
+  color: #fff;
+  padding: 100px;
+  // max-width: 544px;
+  padding-bottom: 213px;
+}
+
+.hero__border {
+  border: 1px solid #14925d;
+  border-radius: 30px;
+}
+
+.hero__subtitle {
+  @include d-flex(flex-start, 7px);
+  border: 1px solid #ffffff30;
+  border-radius: 50px;
+  max-width: max-content;
+  padding: 8px 14px;
+  color: #9855ff;
+}
+
+.hero_mini {
+  padding: 5px;
+  background-color: #9855ff;
+  color: black;
+  border-radius: 40px;
+}
+
+.hero__title {
+  max-width: 492px;
+  font-size: 82px;
+  font-weight: 500;
+  line-height: 84px;
+  letter-spacing: -0.0506em;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  margin: 28px 0;
+}
+
+.hero__text {
+  max-width: 544px;
+  opacity: 70%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: -0.0001em;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.hero__e-mail {
+  max-width: 401px;
+  border: 1px solid #ffffff26;
+  border-radius: 8px;
+  @include d-flex(space-between, 176px);
+  padding: 4px;
+}
+
+.hero__input {
+  max-width: 91px;
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.0001em;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: #ffffff80;
+  background-color: transparent;
+  border: none;
+}
+
+.hero__button_style {
+  max-width: 114px;
+  padding: 5px 15px;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  //
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: -0.0101em;
+  text-align: center;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.hero__phone_button {
+  display: none;
+}
+
+// tablet
+@media only screen and (max-width: 810px) {
+  .hero__title {
+    font-size: 62px;
+    line-height: 62px;
+    max-width: 400px;
+    margin: 20px 0;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+// phone
+@media only screen and (max-width: 460px) {
+  .main-hero {
+    background-position: 24% 56%;
+  }
+
+  .hero__inner {
+    padding: 100px 30px;
+  }
+
+  .hero__title {
+    width: 324px;
+    font-size: 54px;
+    line-height: 69px;
+    letter-spacing: -0.0506em;
+    text-decoration-skip-ink: none;
+  }
+
+  .hero__text {
+    width: 315px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: -0.0001em;
+    text-align: left;
+    text-decoration-skip-ink: none;
+  }
+
+  .hero__e-mail {
+    padding: 10px 0;
+  }
+
+  .hero__button {
+    display: none;
+  }
+
+  
+  .hero__phone_button {
+    margin-top: 12px;
+    display: block;
+    max-width: 358px;
+    min-width: 100%;
+  }
+
+  .hero__button_style {
+    max-width: 358px;
+  }
+}
